@@ -1,0 +1,28 @@
+*{
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#main-login{
+    width: 35%;
+    margin: 0 auto;
+    border:1px solid #cccccc;
+    border-radius: 3px;
+}
+#main-login >h1 {
+    color: #ffffff;
+}
+.logo{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+
+}
+#header{
+     padding: 10px 0;
+}
+.active{
+    color: #31b0d5;
+}
+.my-form{
+    width: 35%;
+    margin: 10px auto;
+}

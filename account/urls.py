@@ -21,10 +21,11 @@ from authaccount import views
 
 urlpatterns = [
   url(r'^admin/', admin.site.urls),
-  url(r'^account/', include('authaccount.urls')),
+  url(r'^account/', include('authaccount.urls', namespace='account')),
+  url(r'^images/', include('images.urls', namespace='images')),
   url(r'^social_auth/', include('social_django.urls', namespace='social')),
   url(r'^$', views.main_index, name='main_index')
 ]
 
-# if settings.DEBUG:
-#   urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+if settings.DEBUG:
+  urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

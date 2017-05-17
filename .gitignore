@@ -9,7 +9,8 @@ __pycache__/
 *.so
 
 # Distribution / packaging
-db.sqlite3b
+images/
+templates/images/
 .idea/
 .Python
 env/

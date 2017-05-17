@@ -18,7 +18,7 @@
             </div>
         {% endif %}
         <div class="card-block">
-            <form action="{% url 'login' %}" method="post">
+            <form action="{% url 'account:login' %}" method="post">
                 {% for field in form %}
                     <div class="form-group">
                         {% with 'form-control,'|addstr:field.label as value %}
@@ -42,8 +42,8 @@
 
         </div>
         <div class="card-footer">
-            <p><a href="{% url "password_reset" %}">Forgot password?</a></p>
-            <p>Don't have an account<a href="{% url "register" %}"> Register Now</a></p>
+            <p><a href="{% url "account:password_reset" %}">Forgot password?</a></p>
+            <p>Don't have an account<a href="{% url "account:register" %}"> Register Now</a></p>
         </div>
 
     </div>

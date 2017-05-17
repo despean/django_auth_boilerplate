@@ -46,8 +46,8 @@ class UserEditForm(forms.ModelForm):
 class ProfileEditForm(forms.ModelForm):
   class Meta:
     model = Profile
-    fields = ('date_of_birth', 'photo')
+    fields = ('birthday', 'photo')
     widgets = {
-      'date_of_birth':forms.DateInput(attrs={'class':'form-control'}),
+      'birthday':forms.DateInput(attrs={'class':'form-control'}),
       'photo': forms.FileInput(attrs={'class': 'form-control-file'})
     }

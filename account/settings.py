@@ -24,9 +24,7 @@ SECRET_KEY = 'cqwfsl!+q55li=wt36b28bh292n&(u1c=#()f(x47k19sld=(m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-  'djangoapp.com'
-]
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -40,7 +38,6 @@ INSTALLED_APPS = [
   'sorl.thumbnail',
   'authaccount',
   'social_django',
-  'images',
 
 ]
 
